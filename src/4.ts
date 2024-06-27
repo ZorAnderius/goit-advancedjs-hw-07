@@ -64,6 +64,9 @@ const key_h2 = new Key();
 const person1_h2 = new Person(key_h2);
 const house2 = new MyHouse(key_h2);
 
+console.log('-------Task4----------');
+
+
 // Wrong key. Door is still closed
 house1.openDoor(person1_h2.getKey());
 house1.comeIn(person1_h2);

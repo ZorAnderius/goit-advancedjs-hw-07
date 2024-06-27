@@ -16,7 +16,12 @@
 
 class Employee {
   // Заповніть модифікатори доступу
-  constructor(public name: string, private department: string, protected salary: number) { }
+  private department: string;
+  protected salary: number
+  constructor(public name: string, department: string, salary: number) { 
+    this.department = department;
+    this.salary = salary;
+  }
 
   getEmployeeDetails() {
     return `Name: ${this.name}, Department: ${this.department}, Salary: ${this.salary}`;
@@ -30,5 +35,10 @@ class Manager extends Employee {
   }
 }
 
+console.log('-------Task2----------');
+
+
+const manager = new Manager('John', 'IT', 50000);
+console.log(manager.getEmployeeDetails());
 
 export {};

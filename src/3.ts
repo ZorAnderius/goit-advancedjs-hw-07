@@ -40,6 +40,7 @@ class Wizard implements ICharacter, ISpellCaster {
   }
 }
 
+console.log('-------Task3----------');
 // тестування класу
 const wizard = new Wizard('Merlin', 15);
 
